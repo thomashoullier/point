@@ -1,2 +1,3 @@
 (defpackage :point-sampling
-  (:use :cl))
+  (:use :cl)
+  (:export #:make-point #:make-point-coords #:copy))
