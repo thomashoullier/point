@@ -1,10 +1,11 @@
-# Point sampling
-The Common Lisp system `point-sampling` is a utility for creating common
-point sampling schemes.
+# Point class
+The Common Lisp system `point` is a simple class implementing
+a representation for geometrical points in the plane. It is
+meant to be used as a base class for working with points
+in other projects.
 
 Features:
-* Limited to the plane (at the moment).
-* Export sampling to csv files for external processing.
+* Limited to the plane (will be extended as soon as I need higher dimensions).
 
 ## Usage
 

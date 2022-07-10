@@ -1,17 +1,17 @@
-(defsystem point-sampling
-  :name "point-sampling"
+(defsystem point
+  :name "point"
   :author "Thomas HOULLIER"
   :depends-on ("alexandria")
   :components
   ((:module "src"
     :components ((:file "package")
                  (:file "point" :depends-on ("package")))))
-  :in-order-to ((test-op (test-op "point-sampling/test"))))
+  :in-order-to ((test-op (test-op "point/test"))))
 
-(defsystem point-sampling/test
-  :name "point-sampling/test"
+(defsystem point/test
+  :name "point/test"
   :author "Thomas HOULLIER"
-  :depends-on ("point-sampling" "rove")
+  :depends-on ("point" "rove")
   :components
   ((:module "test"
     :components ((:file "package")

@@ -1,5 +1,5 @@
 ;;;; Point class.
-(in-package :point-sampling)
+(in-package :point)
 
 (defclass point ()
   ((coordinates :documentation "Vector of point coordinates."

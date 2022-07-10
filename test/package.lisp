@@ -1,2 +1,2 @@
-(defpackage :point-sampling/test
+(defpackage :point/test
   (:use :cl :rove))
