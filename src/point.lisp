@@ -26,6 +26,10 @@
     (with-slots ((coordinates coordinates)) obj
       (format stream "~A" coordinates))))
 
+;; Coordinate readers.
+(defmethod px ((p point)) (aref (coordinates p) 0))
+(defmethod py ((p point)) (aref (coordinates p) 1))
+
 ;;; Coordinate setf.
 (defmethod (setf px) (new-px (p point))
   "Setf the first point coordinate."
@@ -37,10 +41,7 @@
 
 ;; Generated automatically: (setf (coordinates point) #(px py))
 
-;; Coordinate readers.
-(defmethod px ((p point)) (aref (coordinates p) 0))
-(defmethod py ((p point)) (aref (coordinates p) 1))
-
+;;; Predicates
 (defmethod p-eq ((p1 point) (p2 point))
   "Equality predicate for two points."
   (equalp (coordinates p1) (coordinates p2)))
