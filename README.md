@@ -1,6 +1,10 @@
 # Point class
 ![maintained](https://raw.githubusercontent.com/thomashoullier/badges/master/status-maintained.svg)
 
+[![Build Status](https://drone.git-or-miss.com/api/badges/thomashoullier/point/status.svg)](https://drone.git-or-miss.com/thomashoullier/point)
+
+[![Coverage Status](https://coveralls.io/repos/github/thomashoullier/point/badge.svg?branch=master)](https://coveralls.io/github/thomashoullier/point?branch=master)
+
 The Common Lisp system `point` is a simple class implementing
 a representation for geometrical points in the plane. It is
 meant to be used as a base class for working with points
