@@ -15,7 +15,7 @@
   "Point instantiator from vector of coordinates."
   (make-instance 'point :coordinates coordinates))
 
-(defmethod copy ((p point))
+(defmethod p-cpy ((p point))
   "Return a copy of a point."
   (make-instance 'point :coordinates (alexandria:copy-array (coordinates p))))
 

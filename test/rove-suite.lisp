@@ -7,7 +7,7 @@
       (setf p1 (point:make-point 1 2)) (pass "make-point")
       (setf p2 (point:make-point-coords #(3 4)))
       (pass "make-point-coords")
-      (setf p3 (point:copy p1)) (pass "copy"))
+      (setf p3 (point:p-cpy p1)) (pass "copy"))
     (testing "Printer" (format t "~&~A~%" p1) (pass ""))
     (testing "Coordinates readers"
       (ok (and (= 1 (point:px p1)) (= 2 (point:py p1))) "px, py"))
