@@ -1,6 +1,8 @@
 # Point class
 ![maintained](https://raw.githubusercontent.com/thomashoullier/badges/master/status-maintained.svg)
 
+![stage](https://raw.githubusercontent.com/thomashoullier/badges/master/stage-alpha.svg)
+
 [![Build Status](https://drone.git-or-miss.com/api/badges/thomashoullier/point/status.svg)](https://drone.git-or-miss.com/thomashoullier/point)
 
 [![Coverage Status](https://coveralls.io/repos/github/thomashoullier/point/badge.svg?branch=master)](https://coveralls.io/github/thomashoullier/point?branch=master)
@@ -12,6 +14,9 @@ in other projects.
 
 Features:
 * Limited to the plane (will be extended as soon as I need higher dimensions).
+
+Please note this system is in ALPHA, the API is likely to change. I will
+probably merge this system in a larger 2D geometry library soon.
 
 ## Usage
 The class `point` simply holds a vector of coordinates and implements utility
