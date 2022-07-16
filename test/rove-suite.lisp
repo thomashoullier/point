@@ -17,4 +17,6 @@
       (setf (point:coordinates p2) #(1 2))
       (ok (and (= 1 (point:px p2)) (= 2 (point:py p2))) "coordinates"))
     (testing "Predicates"
-      (ok (and (point:p-eq p1 p2) (not (point:p-eq p1 p3))) "p-eq"))))
+      (ok (and (point:p-eq p1 p2) (not (point:p-eq p1 p3))) "p-eq"))
+    (testing "String export"
+      (point:p-tocsv-str (point:make-point 1 2)) (pass "pass"))))

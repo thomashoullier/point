@@ -56,6 +56,18 @@ There is an equality predicate.
 (p-eq *p1* *p2*) ;=> T
 ```
 
+### Export to string
+**p-tocsv-str** point => string
+
+Export the coordinates of point to a csv string. It is adapted to double-float
+numbers by default. Intended to facilitate concatenation to build csv files.
+
+```common-lisp
+(p-tocsv-str (make-point 1 2d3))
+;=> "1.0000000000000000e+0 , 2.0000000000000000e+3
+"
+```
+
 ## Dependencies
 * `point`:
   * [alexandria](https://gitlab.common-lisp.net/alexandria/alexandria)

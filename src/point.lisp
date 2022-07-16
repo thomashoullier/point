@@ -45,3 +45,7 @@
 (defmethod p-eq ((p1 point) (p2 point))
   "Equality predicate for two points."
   (equalp (coordinates p1) (coordinates p2)))
+
+(defmethod p-tocsv-str ((p point))
+  "Export point to a csv string."
+  (format nil "~,16,,,,,'eE , ~,16,,,,,'eE~%" (px p) (py p)))
