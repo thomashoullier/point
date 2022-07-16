@@ -73,3 +73,9 @@ numbers by default. Intended to facilitate concatenation to build csv files.
   * [alexandria](https://gitlab.common-lisp.net/alexandria/alexandria)
 * `point/test`:
   * [rove](https://github.com/fukamachi/rove)
+
+## Further work
+* The export of point coordinates to string are always exported with a
+  scientific notation. This takes up too much space in the case of integers.
+  I haven't found a nice library that takes care of this problem for me:
+  always writing a sensible string whatever the input number.
